@@ -1,6 +1,7 @@
 use_synth :piano
 
 # https://www.youtube.com/watch?v=CHNE1S1vE3I
+# https://www.youtube.com/watch?v=9G5UncNzae8
 
 # the background continuous piano repetition
 in_thread do
@@ -58,7 +59,7 @@ end
 # the heartstrum from the start..
 in_thread do
   sleep 6.4
-  heartstrum_amp = 0.3
+  heartstrum_amp = 0.5
   loop do
     play 97, release: 1, amp: heartstrum_amp
     sleep 0.2
@@ -76,7 +77,9 @@ end
 
 # the vocal, intro
 in_thread do
-  sleep 32
+  ##| sleep 12.8
+  sleep 0.4
+
   play 88
   sleep 0.2
   play 88, sustain:5
