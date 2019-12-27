@@ -4,69 +4,73 @@ use_synth :piano
 # https://www.youtube.com/watch?v=9G5UncNzae8
 
 # the background continuous piano repetition
-in_thread do
-  ##| sleep 16
-  background_amp = 0.2
-  loop do
+def start_background()
+  in_thread do
+    ##| sleep 16
+    background_amp = 0.2
+    loop do
 
-    4.times do
-      play 85, amp:background_amp
-      sleep 0.2
-      play 90, amp:background_amp
-      sleep 0.2
-      play 92, amp:background_amp
-      sleep 0.2
+      4.times do
+        play 85, amp:background_amp
+        sleep 0.2
+        play 90, amp:background_amp
+        sleep 0.2
+        play 92, amp:background_amp
+        sleep 0.2
+      end
+
+      1.times do
+        play 83, amp:background_amp
+        sleep 0.2
+        play 85, amp:background_amp
+        sleep 0.2
+        play 88, amp:background_amp
+        sleep 0.2
+        play 90, amp:background_amp
+        sleep 0.2
+
+      end
+
+      4.times do
+        play 85, amp:background_amp
+        sleep 0.2
+        play 90, amp:background_amp
+        sleep 0.2
+        play 92, amp:background_amp
+        sleep 0.2
+      end
+
+      1.times do
+        play 83, amp:background_amp
+        sleep 0.2
+        play 90, amp:background_amp
+        sleep 0.2
+        play 88, amp:background_amp
+        sleep 0.2
+        play 95, amp:background_amp
+        sleep 0.2
+      end
+
     end
-
-    1.times do
-      play 83, amp:background_amp
-      sleep 0.2
-      play 85, amp:background_amp
-      sleep 0.2
-      play 88, amp:background_amp
-      sleep 0.2
-      play 90, amp:background_amp
-      sleep 0.2
-
-    end
-
-    4.times do
-      play 85, amp:background_amp
-      sleep 0.2
-      play 90, amp:background_amp
-      sleep 0.2
-      play 92, amp:background_amp
-      sleep 0.2
-    end
-
-    1.times do
-      play 83, amp:background_amp
-      sleep 0.2
-      play 90, amp:background_amp
-      sleep 0.2
-      play 88, amp:background_amp
-      sleep 0.2
-      play 95, amp:background_amp
-      sleep 0.2
-    end
-
   end
 end
 
-# the heartstrum from the start..
-in_thread do
-  sleep 6.4
-  heartstrum_amp = 0.3
-  loop do
-    play 97, release: 1, amp: heartstrum_amp
-    sleep 0.2
-    play 95, amp: heartstrum_amp
-    sleep 1.8
+def start_heartstrum()
+  # the heartstrum from the start..
+  in_thread do
+    ##| sleep 6.4
+    heartstrum_amp = 0.3
+    loop do
+      play 97, release: 1, amp: heartstrum_amp
+      sleep 0.2
+      play 95, amp: heartstrum_amp
+      sleep 1.8
 
-    play 97, release: 1, amp: heartstrum_amp
-    sleep 0.2
-    play 95, amp: heartstrum_amp
-    sleep 1
+      play 97, release: 1, amp: heartstrum_amp
+      sleep 0.2
+      play 95, amp: heartstrum_amp
+      sleep 1
+    end
   end
 end
 
@@ -352,11 +356,17 @@ end
 
 # main song
 in_thread do
+
+  #start background continuous
+  ##| start_background()
+  ##| start_heartstrum()
+
+
   ##| sleep 12.8
   ##| sleep 5
 
-  buildUp()
-  buildUp()
+  ##| buildUp()
+  ##| buildUp()
   prechorus()
   preclimax()
   ##| climax()
