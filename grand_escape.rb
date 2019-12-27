@@ -25,6 +25,29 @@ in_thread do
       sleep 0.2
 
     end
+
+    4.times do
+
+      play 85
+      sleep 0.2
+      play 90
+      sleep 0.2
+      play 92
+      sleep 0.2
+    end
+
+    1.times do
+
+      play 83
+      sleep 0.2
+      play 90
+      sleep 0.2
+      play 88
+      sleep 0.2
+      play 95
+      sleep 0.2
+
+    end
   end
 end
 
