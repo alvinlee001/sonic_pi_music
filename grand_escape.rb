@@ -6,7 +6,7 @@ use_synth :piano
 # the background continuous piano repetition
 in_thread do
   ##| sleep 16
-  background_amp = 0.3
+  background_amp = 0.2
   loop do
 
     4.times do
@@ -56,7 +56,7 @@ end
 # the heartstrum from the start..
 in_thread do
   sleep 6.4
-  heartstrum_amp = 0.5
+  heartstrum_amp = 0.3
   loop do
     play 97, release: 1, amp: heartstrum_amp
     sleep 0.2
@@ -70,11 +70,7 @@ in_thread do
   end
 end
 
-# this
-
-
-in_thread do
-  ##| sleep 12.8
+def buildUp()
   sleep 0.4
 
   play 88
@@ -184,12 +180,12 @@ in_thread do
   sleep 0.6
 
   sleep 1.6
-
   sleep 1.6
+end
 
+def prechorus()
   # prechorus
   sleep 0.4
-
   play 95
   sleep 0.4
   play 88, sustain:5
@@ -345,6 +341,26 @@ in_thread do
   sleep 0.2
   play 88
   sleep 0.2
+end
+
+def preclimax()
+
+end
+
+
+
+
+# main song
+in_thread do
+  ##| sleep 12.8
+  ##| sleep 5
+
+  buildUp()
+  buildUp()
+  prechorus()
+  preclimax()
+  ##| climax()
+  ##| resolution()
 end
 
 
