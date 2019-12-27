@@ -1,11 +1,13 @@
 use_synth :piano
 
+
 # https://www.youtube.com/watch?v=CHNE1S1vE3I
 # https://www.youtube.com/watch?v=9G5UncNzae8
 
 # the background continuous piano repetition
-def start_background()
+def start_background(synthType: "piano")
   in_thread do
+    use_synth synthType
     ##| sleep 16
     background_amp = 0.2
     loop do
@@ -55,9 +57,10 @@ def start_background()
   end
 end
 
-def start_heartstrum()
+def start_heartstrum(synthType: "piano")
   # the heartstrum from the start..
   in_thread do
+    use_synth synthType
     ##| sleep 6.4
     heartstrum_amp = 0.3
     loop do
@@ -74,7 +77,8 @@ def start_heartstrum()
   end
 end
 
-def buildUp(offset = 0)
+def buildUp(offset: 0, synthType: "piano")
+  use_synth synthType
   sleep 0.4
 
   play 88+offset
@@ -187,7 +191,8 @@ def buildUp(offset = 0)
   sleep 1.6
 end
 
-def prechorus(offset = 0)
+def prechorus(offset: 0, synthType: "piano")
+  use_synth synthType
   # prechorus
   sleep 0.4
   play 95+offset
@@ -344,10 +349,11 @@ def prechorus(offset = 0)
   play 90+offset
   sleep 0.2
   play 88+offset
-  sleep 0.2
+  sleep 0.4
 end
 
-def preclimax(offset = 0) # as we stray a little from predestined fate
+def preclimax(offset: 0, synthType: "piano") # as we stray a little from predestined fate
+  use_synth synthType
   sleep 0.2
   4.times do |i|
     play 95+offset
@@ -388,7 +394,8 @@ def preclimax(offset = 0) # as we stray a little from predestined fate
   end
 end
 
-def climax(offset = 0)
+def climax(offset: 0, synthType: "piano")
+  use_synth synthType
   2.times do |i|
     play 88+offset
     sleep 0.2
@@ -454,9 +461,10 @@ def climax(offset = 0)
     play 87+offset
     sleep 0.2
     play 88+offset
-    sleep 0.8
+
 
     if i == 1
+      sleep 0.6
       play 85+offset
       sleep 0.2
       play 88+offset
@@ -472,6 +480,7 @@ def climax(offset = 0)
       play 88+offset
       sleep 0.4
     else
+      sleep 0.8
       play 88+offset
       sleep 0.4
       play 88+offset
@@ -528,25 +537,20 @@ end
 
 # main song
 in_thread do
+  use_bpm 60
 
+  offset = -12
   #start background continuous
   start_background()
   start_heartstrum()
 
 
-  ##| sleep 12.8
+  sleep 12.8
   ##| sleep 5
 
-  ##| buildUp(-12)
-  ##| buildUp(-12)
-  ##| prechorus(-12)
-  preclimax(-12)
-  climax(-12)
-  ##| resolution()
+  buildUp(offset: offset)
+  buildUp(offset: offset)
+  prechorus(offset: offset)
+  preclimax(offset: offset)
+  climax(offset: offset)
 end
-
-
-
-
-
-
