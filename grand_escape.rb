@@ -74,306 +74,306 @@ def start_heartstrum()
   end
 end
 
-def buildUp()
+def buildUp(offset = 0)
   sleep 0.4
 
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88, sustain:5
+  play 88+offset, sustain:5
   sleep 0.6
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88, sustain:5
+  play 88+offset, sustain:5
   sleep 0.6
-  play 83
+  play 83+offset
   sleep 0.2
-  play 83, sustain:5
+  play 83+offset, sustain:5
   sleep 0.6
-  play 83
+  play 83+offset
   sleep 0.2
-  play 85, sustain:5
+  play 85+offset, sustain:5
   sleep 0.6
-  play 83
+  play 83+offset
   sleep 0.2
-  play 83, sustain:5
+  play 83+offset, sustain:5
   sleep 0.6
-  play 81
+  play 81+offset
   sleep 0.2
-  play 83, sustain:5
-  sleep 0.6
-
-  sleep 1.6
-
-  play 88
-  sleep 0.2
-  play 88, sustain:5
-  sleep 0.6
-  play 88
-  sleep 0.2
-  play 88, sustain:5
-  sleep 0.6
-  play 83
-  sleep 0.2
-  play 83, sustain:5
-  sleep 0.6
-  play 76
-  sleep 0.2
-  play 76, sustain:5
-  sleep 0.6
-  play 80
-  sleep 0.2
-  play 78, sustain:5
-  sleep 0.6
-  play 76
-  sleep 0.2
-  play 76, sustain:5
+  play 83+offset, sustain:5
   sleep 0.6
 
   sleep 1.6
 
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88, sustain:5
+  play 88+offset, sustain:5
   sleep 0.6
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88, sustain:5
+  play 88+offset, sustain:5
   sleep 0.6
-  play 83
+  play 83+offset
   sleep 0.2
-  play 83, sustain:5
+  play 83+offset, sustain:5
   sleep 0.6
-  play 83
+  play 76+offset
   sleep 0.2
-  play 85, sustain:5
+  play 76+offset, sustain:5
   sleep 0.6
-  play 83
+  play 80+offset
   sleep 0.2
-  play 83, sustain:5
+  play 78+offset, sustain:5
   sleep 0.6
-  play 81
+  play 76+offset
   sleep 0.2
-  play 83, sustain:5
+  play 76+offset, sustain:5
   sleep 0.6
 
   sleep 1.6
 
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88, sustain:5
+  play 88+offset, sustain:5
   sleep 0.6
-  play 87
+  play 88+offset
   sleep 0.2
-  play 88, sustain:5
+  play 88+offset, sustain:5
   sleep 0.6
-  play 87
+  play 83+offset
   sleep 0.2
-  play 88, sustain:5
+  play 83+offset, sustain:5
   sleep 0.6
-  play 87
+  play 83+offset
   sleep 0.2
-  play 88, sustain:5
+  play 85+offset, sustain:5
   sleep 0.6
-  play 92
+  play 83+offset
   sleep 0.2
-  play 90, sustain:5
+  play 83+offset, sustain:5
   sleep 0.6
-  play 88
+  play 81+offset
   sleep 0.2
-  play 88, sustain:5
+  play 83+offset, sustain:5
+  sleep 0.6
+
+  sleep 1.6
+
+  play 88+offset
+  sleep 0.2
+  play 88+offset, sustain:5
+  sleep 0.6
+  play 87+offset
+  sleep 0.2
+  play 88+offset, sustain:5
+  sleep 0.6
+  play 87+offset
+  sleep 0.2
+  play 88+offset, sustain:5
+  sleep 0.6
+  play 87+offset
+  sleep 0.2
+  play 88+offset, sustain:5
+  sleep 0.6
+  play 92+offset
+  sleep 0.2
+  play 90+offset, sustain:5
+  sleep 0.6
+  play 88+offset
+  sleep 0.2
+  play 88+offset, sustain:5
   sleep 0.6
 
   sleep 1.6
   sleep 1.6
 end
 
-def prechorus()
+def prechorus(offset = 0)
   # prechorus
   sleep 0.4
-  play 95
+  play 95+offset
   sleep 0.4
-  play 88, sustain:5
+  play 88+offset, sustain:5
   sleep 0.4
-  play 88
+  play 88+offset
   sleep 0.2
-  play 87
+  play 87+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 90
+  play 90+offset
   sleep 0.2
-  play 92
+  play 92+offset
   sleep 0.4
-  play 88
+  play 88+offset
   sleep 0.4
-  play 83
+  play 83+offset
   sleep 0.4
-  play 83
+  play 83+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 90
+  play 90+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
 
   sleep 1.8
 
-  play 95
+  play 95+offset
   sleep 0.4
-  play 88, sustain:5
+  play 88+offset, sustain:5
   sleep 0.4
-  play 88
+  play 88+offset
   sleep 0.2
-  play 87
+  play 87+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 90
+  play 90+offset
   sleep 0.2
-  play 92
+  play 92+offset
   sleep 0.4
-  play 88
+  play 88+offset
   sleep 0.4
-  play 83
+  play 83+offset
   sleep 0.4
-  play 83
+  play 83+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 90
+  play 90+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
 
   sleep 1.8
 
-  play 95
+  play 95+offset
   sleep 0.4
-  play 88, sustain:5
+  play 88+offset, sustain:5
   sleep 0.4
-  play 88
+  play 88+offset
   sleep 0.2
-  play 87
+  play 87+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 90
+  play 90+offset
   sleep 0.2
-  play 92
+  play 92+offset
   sleep 0.4
-  play 88
+  play 88+offset
   sleep 0.4
-  play 83
+  play 83+offset
   sleep 0.4
-  play 83
+  play 83+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 90
+  play 90+offset
   sleep 0.2
-  play 92
+  play 92+offset
   sleep 0.2
 
   sleep 1.8
 
-  play 95
+  play 95+offset
   sleep 0.4
-  play 88, sustain:5
+  play 88+offset, sustain:5
   sleep 0.4
-  play 88
+  play 88+offset
   sleep 0.2
-  play 87
+  play 87+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 90
+  play 90+offset
   sleep 0.2
-  play 92
+  play 92+offset
   sleep 0.4
-  play 88
+  play 88+offset
   sleep 0.4
-  play 83
+  play 83+offset
   sleep 0.4
-  play 83
+  play 83+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 90
+  play 90+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
 
   sleep 1.8
 
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
-  play 90
+  play 90+offset
   sleep 0.2
-  play 88
+  play 88+offset
   sleep 0.2
 end
 
-def preclimax() # as we stray a little from predestined fate
+def preclimax(offset = 0) # as we stray a little from predestined fate
   4.times do |i|
-    play 95
+    play 95+offset
     sleep 0.4
-    play 93
+    play 93+offset
     sleep 0.4
-    play 92
+    play 92+offset
 
     if i < 3
       sleep 0.2
-      play 92
+      play 92+offset
       sleep 0.2
-      play 93
+      play 93+offset
       sleep 0.2
-      play 92
+      play 92+offset
       sleep 0.2
-      play 93
+      play 93+offset
       sleep 0.2
-      play 92
+      play 92+offset
       sleep 0.2
-      play 93
+      play 93+offset
       sleep 0.2
-      play 92
+      play 92+offset
       sleep 0.2
-      play 90
+      play 90+offset
       sleep 0.2
-      play 88
+      play 88+offset
       sleep 0.2
 
     else
@@ -399,7 +399,7 @@ in_thread do
   ##| sleep 12.8
   ##| sleep 5
 
-  buildUp()
+  buildUp(-12)
   ##| buildUp()
   ##| prechorus()
   ##| preclimax()
