@@ -225,7 +225,7 @@ def prechorus(offset = 0)
   play 88+offset
   sleep 0.2
 
-  sleep 1.8
+  sleep 2.0
 
   play 95+offset
   sleep 0.4
@@ -262,7 +262,7 @@ def prechorus(offset = 0)
   play 88+offset
   sleep 0.2
 
-  sleep 1.8
+  sleep 2.0
 
   play 95+offset
   sleep 0.4
@@ -299,7 +299,7 @@ def prechorus(offset = 0)
   play 92+offset
   sleep 0.2
 
-  sleep 1.8
+  sleep 2.0
 
   play 95+offset
   sleep 0.4
@@ -336,7 +336,7 @@ def prechorus(offset = 0)
   play 88+offset
   sleep 0.2
 
-  sleep 1.8
+  sleep 2.2
 
   sleep 0.2
   play 88+offset
@@ -348,6 +348,7 @@ def prechorus(offset = 0)
 end
 
 def preclimax(offset = 0) # as we stray a little from predestined fate
+  sleep 0.2
   4.times do |i|
     play 95+offset
     sleep 0.4
@@ -378,12 +379,149 @@ def preclimax(offset = 0) # as we stray a little from predestined fate
 
     else
       # something here
+      sleep 1.4
+
     end
 
 
     sleep 0.4
   end
 end
+
+def climax(offset = 0)
+  2.times do |i|
+    play 88+offset
+    sleep 0.2
+    play 90+offset
+    sleep 0.2
+    play 92+offset
+    sleep 0.2
+    play 93+offset
+    sleep 0.4
+    play 92+offset
+    sleep 0.2
+    play 90+offset
+    sleep 0.2
+    play 88+offset
+    sleep 0.4
+    play 88+offset
+    sleep 0.4
+    play 90+offset
+    sleep 0.4
+
+    sleep 0.6
+
+
+    play 88+offset
+    sleep 0.2
+    play 88+offset
+    sleep 0.2
+    play 95+offset
+    sleep 0.2
+    play 95+offset
+    sleep 0.4
+    play 93+offset
+    sleep 0.2
+    play 92+offset
+    sleep 0.2
+    play 90+offset
+    sleep 0.4
+    play 92+offset
+    sleep 0.2
+    play 93+offset
+    sleep 0.2
+    play 93+offset
+    sleep 0.2
+    play 92+offset
+    sleep 0.2
+    play 93+offset
+    sleep 0.2
+    play 92+offset
+    sleep 0.2
+    play 90+offset
+    sleep 0.2
+  end
+
+  play 88+offset
+  sleep 0.6
+  play 85+offset
+  sleep 0.2
+
+  2.times do |i|
+
+    play 88+offset
+    sleep 0.4
+    play 87+offset
+    sleep 0.2
+    play 88+offset
+    sleep 0.8
+
+    if i == 1
+      play 85+offset
+      sleep 0.2
+      play 88+offset
+      sleep 0.2
+      play 90+offset
+      sleep 0.2
+      play 88+offset
+      sleep 0.2
+      play 88+offset
+      sleep 1
+      play 88+offset
+      sleep 0.4
+      play 88+offset
+      sleep 0.4
+    else
+      play 88+offset
+      sleep 0.4
+      play 88+offset
+      sleep 0.3
+    end
+
+
+    play 90+offset
+    sleep 0.4
+    play 90+offset
+    sleep 0.2
+    play 90+offset
+    sleep 0.2
+    play 90+offset
+    sleep 0.2
+    play 92+offset
+    sleep 0.2
+    play 92+offset
+    sleep 0.2
+    play 92+offset
+    sleep 0.2
+
+    sleep 0.8
+  end
+
+  4.times do |i|
+    if i != 0
+      play 88+offset
+    end
+
+    play 93+offset
+    sleep 0.2
+    play 92+offset
+    sleep 0.2
+    play 90+offset
+    sleep 0.2
+    play 88+offset
+    sleep 0.8
+    if i != 2
+      sleep 0.2
+    else
+      sleep 1.2
+      play 88+offset
+      sleep 0.2
+    end
+
+  end
+
+end
+
 
 
 
@@ -399,13 +537,14 @@ in_thread do
   ##| sleep 12.8
   ##| sleep 5
 
-  buildUp(-12)
-  ##| buildUp()
-  ##| prechorus()
-  ##| preclimax()
-  ##| climax()
+  ##| buildUp(-12)
+  ##| buildUp(-12)
+  ##| prechorus(-12)
+  preclimax(-12)
+  climax(-12)
   ##| resolution()
 end
+
 
 
 
