@@ -8,8 +8,8 @@ in_thread do
   ##| sleep 16
   background_amp = 0.3
   loop do
-    4.times do
 
+    4.times do
       play 85, amp:background_amp
       sleep 0.2
       play 90, amp:background_amp
@@ -19,7 +19,6 @@ in_thread do
     end
 
     1.times do
-
       play 83, amp:background_amp
       sleep 0.2
       play 85, amp:background_amp
@@ -32,7 +31,6 @@ in_thread do
     end
 
     4.times do
-
       play 85, amp:background_amp
       sleep 0.2
       play 90, amp:background_amp
@@ -42,7 +40,6 @@ in_thread do
     end
 
     1.times do
-
       play 83, amp:background_amp
       sleep 0.2
       play 90, amp:background_amp
@@ -51,8 +48,8 @@ in_thread do
       sleep 0.2
       play 95, amp:background_amp
       sleep 0.2
-
     end
+
   end
 end
 
@@ -75,7 +72,7 @@ end
 
 # this
 
-# the vocal, intro
+
 in_thread do
   ##| sleep 12.8
   sleep 0.4
@@ -188,6 +185,166 @@ in_thread do
 
   sleep 1.6
 
+  sleep 1.6
+
+  # prechorus
+  sleep 0.4
+
+  play 95
+  sleep 0.4
+  play 88, sustain:5
+  sleep 0.4
+  play 88
+  sleep 0.2
+  play 87
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 90
+  sleep 0.2
+  play 92
+  sleep 0.4
+  play 88
+  sleep 0.4
+  play 83
+  sleep 0.4
+  play 83
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 90
+  sleep 0.2
+  play 88
+  sleep 0.2
+
+  sleep 1.8
+
+  play 95
+  sleep 0.4
+  play 88, sustain:5
+  sleep 0.4
+  play 88
+  sleep 0.2
+  play 87
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 90
+  sleep 0.2
+  play 92
+  sleep 0.4
+  play 88
+  sleep 0.4
+  play 83
+  sleep 0.4
+  play 83
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 90
+  sleep 0.2
+  play 88
+  sleep 0.2
+
+  sleep 1.8
+
+  play 95
+  sleep 0.4
+  play 88, sustain:5
+  sleep 0.4
+  play 88
+  sleep 0.2
+  play 87
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 90
+  sleep 0.2
+  play 92
+  sleep 0.4
+  play 88
+  sleep 0.4
+  play 83
+  sleep 0.4
+  play 83
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 90
+  sleep 0.2
+  play 92
+  sleep 0.2
+
+  sleep 1.8
+
+  play 95
+  sleep 0.4
+  play 88, sustain:5
+  sleep 0.4
+  play 88
+  sleep 0.2
+  play 87
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 90
+  sleep 0.2
+  play 92
+  sleep 0.4
+  play 88
+  sleep 0.4
+  play 83
+  sleep 0.4
+  play 83
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 90
+  sleep 0.2
+  play 88
+  sleep 0.2
+
+  sleep 1.8
+
+  sleep 0.2
+  play 88
+  sleep 0.2
+  play 90
+  sleep 0.2
+  play 88
+  sleep 0.2
 end
 
 
