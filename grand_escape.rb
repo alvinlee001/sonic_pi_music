@@ -347,8 +347,42 @@ def prechorus()
   sleep 0.2
 end
 
-def preclimax()
+def preclimax() # as we stray a little from predestined fate
+  4.times do |i|
+    play 95
+    sleep 0.4
+    play 93
+    sleep 0.4
+    play 92
 
+    if i < 3
+      sleep 0.2
+      play 92
+      sleep 0.2
+      play 93
+      sleep 0.2
+      play 92
+      sleep 0.2
+      play 93
+      sleep 0.2
+      play 92
+      sleep 0.2
+      play 93
+      sleep 0.2
+      play 92
+      sleep 0.2
+      play 90
+      sleep 0.2
+      play 88
+      sleep 0.2
+
+    else
+      # something here
+    end
+
+
+    sleep 0.4
+  end
 end
 
 
@@ -358,17 +392,17 @@ end
 in_thread do
 
   #start background continuous
-  ##| start_background()
-  ##| start_heartstrum()
+  start_background()
+  start_heartstrum()
 
 
   ##| sleep 12.8
   ##| sleep 5
 
+  buildUp()
   ##| buildUp()
-  ##| buildUp()
-  prechorus()
-  preclimax()
+  ##| prechorus()
+  ##| preclimax()
   ##| climax()
   ##| resolution()
 end
